@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include, url
+from rest_framework_jwt.views import obtain_jwt_token
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('', include('listbuilder.urls')),
+    # path('api-auth', include('rest_framework.urls', namespace='rest_framework')),
+    # url(r'^api-token-auth/', obtain_jwt_token),
 ]
+# check JWTconfiguration docs here https://jpadilla.github.io/django-rest-framework-jwt/
