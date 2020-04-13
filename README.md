@@ -17,6 +17,7 @@ $ pip install python-dotenv
 $ pip3 install djangorestframework
 $ pip3 install djangorestframework-jwt
 $ pip3 install django-extensions
+$ python -m pip install django-cors-headers
 ```
 
 NOTE: eventually we will need Cors as described in this [GA rest-django lesson](https://git.generalassemb.ly/jdr-0127/django-rest-framework) excerpt:

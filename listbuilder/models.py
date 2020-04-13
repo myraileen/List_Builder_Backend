@@ -25,3 +25,27 @@ class List(models.Model):
 
     def __str__(self):
         return self.title
+
+# class Item(models.Model):
+#     item = models.CharField(max_length=200)
+#     item_type = models.CharField(max_length=200)
+#     item_desc = models.TextField(default='',null=True, blank=True)
+#     status = models.CharField(max_length=200)
+#     user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='items')
+#     create_ts = models.DateTimeField(auto_now_add=True)
+#     update_ts = models.DateTimeField(auto_now=True)
+    
+#     def __str__(self):
+#         return self.item
+
+# class ListDetails(models.Model):
+#     list_id = models.ForeignKey(List, on_delete=models.CASCADE, related_name='list_items')
+#     item_id = models.ForeignKey(Item, on_delete=models.CASCADE, related_name='list_items')
+#     status = models.CharField(max_length=200)
+#     item_qty = models.PositiveSmallIntegerField(default=1)
+#     user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='list_items')
+#     create_ts = models.DateTimeField(auto_now_add=True)
+#     update_ts = models.DateTimeField(auto_now=True)
+    
+#     def __str__(self):
+#         return self.
